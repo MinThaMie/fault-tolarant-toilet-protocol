@@ -12,9 +12,9 @@ the assumption that toilet users wish to optimize their toilet behaviour for
 inconvenience cost. Richard Harter (2005) also tries to find a cost optimum
 and proposes three cost minimization candidate criteria:
 
-> (1) Minimize the joint total cost
-> (2) Equalize the respective total costs
-> (3) Equalize the respective incremental costs
+> 1. Minimize the joint total cost
+> 2. Equalize the respective total costs
+> 3. Equalize the respective incremental costs
 
 Although we shall not refute their findings given these assumptions, we
 propose an altogether different metric to optimize for:
