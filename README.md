@@ -95,19 +95,64 @@ In both cases the benefit can be used as an incentive to apply a protocol that
 is inherently self-serving (albeit not `selfish`, as per Choi's analysis).
 
 
-## Fault tolarant toilet seat protocol
-Based upon the assumpations written above this protocol will optimize the experience of using a toilet in a non-collaborative setting.
+## Protocol proposition
 
-1. Upon entering the bathroom you will find the seat in the `up` position.
-2. When you want to sit down while defecating you move the seat to the `down` position.
-3. After finishing step 2 you move the seat back in the `up` position.
+Given a state machine with the following states:
+
+```text
+[up, down, closed]
+```
+
+for the toilet seat up, toilet seat down and toilet lid closed states,
+respectively; and the following transitions:
+
+```text
+[
+  up -> down        (1)
+  up -> closed      (2)
+  down -> up        (3)
+  down -> closed    (4)
+  closed -> up      (5)
+  closed -> down    (6)
+]
+```
+
+we would propose the following protocol:
+
+1. Upon entering the bathroom we observe any of the three possible states
+2. Given the state, and the user's requirements, the user will either:
+    1. Make no transition; or
+    2. Make a transition into the desired `down` state (1 or 6); or
+    3. Make a transition into the desired `up` state (3 or 5).
+3. The user does their business
+4. After finishing step 3 the user will either:
+    1. Make no transition; or
+    2. Make a transition into the `up` state (3 or 5);<br/>
+such that in any case the end state of the toilet is the `up` state.
+
+This protocol, if properly implemented, maximizes the `up` state of the toilet,
+making visits to the toilet by users who apply `2.i.` less likely to smear the
+toilet seat, regardless of whether they adopt this protocol or not. This makes
+the protocol defensive by nature, and thus (as we consider a dirty toilet to be
+a fault, in our model) the most fault-tolerant solution.
+
+One could argue that as the adoption rate of this protocol reaches the maximum,
+female users will mostly apply `2.ii.` followed by `4.ii.`, whereas male users will
+be able to apply `2.i.` followed by `4.i.` in six out of an average of seven toilet
+visits, and as such infer less cost in the classical sense. Consider, however,
+that this distribution of cost perfecly matches the distribution of benefits as
+outlined in our benefit analysis, making each agent inherently self-serving and
+yet contributing to the end goal of cleanliness.
+
 
 ## Social impact of the proposed toilet seat protocol
 Eventhough it might be an unpopular stand point to have to put the toilet seat back into the upright posistion especially from a female perspective as shown by Choi, we argue that this protocol benefits everyone.
 As shown by UK Bathrooms [4] the arguements around the toilet seat puts a strain on relationships. Hilt et al.[5] show that there are a lot of bacteria in urine which pose serious health hazards so reducing the chanche to catch these bacteria will benefit society. The largest problem with the proposed strategy is that it requires a change in behaviour. Changing behaviour is hard and requires time and effort. The most benefitial part of this protocol is that the toilet seat is always in the same state, upwards. Knowing this state and the required action will reduce the current frustration that arises from the suprise effect that women experience from sitting down on the toilet without a seat.
 
+
 ## Future research
 Gerba et al. [6] show in their research that there are merrits to closing the lid when flushing. Since this step does not influence the end state of the lid it is not part of the protocol eventhough it might be worth to address this topic when thinking about a toilet in a hostile, but even in a collaborative enviroment.
+
 
 # References
 
