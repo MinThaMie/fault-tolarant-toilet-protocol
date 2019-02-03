@@ -52,6 +52,13 @@ by Harter nears zero. We define cooperative environments as toilets in spaces
 where toilet users do feel responsibility for keeping both the toilet clean and
 the relationship intact. In other words, `M` nears one.
 
+## Fault tolarant toilet seat protocol
+Based upon the assumpations written above this protocol will optimize the experience of using a toilet in a non-collaborative setting.
+
+1. Upon entering the bathroom you will find the seat in the `up` position.
+2. When you want to sit down while defecating you move the seat to the `down` position.
+3. After finishing step 2 you move the seat back in the `up` position.
+
 # References
 
 1. [Up or down? A male econimist's manifesto on the toilet seat etiquette, Jay Pil Choi][1]
