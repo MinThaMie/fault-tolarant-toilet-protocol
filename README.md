@@ -7,9 +7,9 @@ positioning in a hostile environment.
 
 ## Assumptions
 
-Jay Pil Choi (2002) in his excellent article on toilet seat etiquette makes
+[Jay Pil Choi (2002)][1]`[1]` in his excellent article on toilet seat etiquette makes
 the assumption that toilet users wish to optimize their toilet behaviour for
-inconvenience cost. Richard Harter (2005) also tries to find a cost optimum
+inconvenience cost. [Richard Harter (2005)][2]`[2]` also tries to find a cost optimum
 and proposes three cost minimization candidate criteria:
 
 > 1. Minimize the joint total cost
@@ -51,3 +51,13 @@ with whom the toilet is shared. In other words, the `conflict cost M` as defined
 by Harter nears zero. We define cooperative environments as toilets in spaces
 where toilet users do feel responsibility for keeping both the toilet clean and
 the relationship intact. In other words, `M` nears one.
+
+# References
+
+1. [Up or down? A male econimist's manifesto on the toilet seat etiquette, Jay Pil Choi][1]
+2. [A game theoretic approach to the toilet seat problem, Richard Harter][2]
+3. [Relevant thread on Reddit][3]
+
+[1]: https://msu.edu/~choijay/etiquette.pdf
+[2]: http://www.scq.ubc.ca/a-game-theoretic-approach-to-the-toilet-seat-problem/
+[3]: https://www.reddit.com/r/dataisbeautiful/comments/2rzkcu/optimal_toilet_seat_strategies_oc/
