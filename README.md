@@ -21,9 +21,9 @@ propose an altogether different metric to optimize for:
 
 Given the fact that humans on average, regardless of gender, have very
 little affection for toilet seats that are covered in feces or urine
-[citation needed] we instead propose to optimize for toilet seat
-cleanliness. This introduces a novel optimization challenge and a new cost
-distribution across genders.
+<sup>[citation needed]</sup> we instead propose to optimize for toilet seat
+cleanliness. This introduces a novel optimization challenge and a new
+cost/benefit distribution across genders.
 
 Secondly, both Choi and Harter assume that the parties in a toilet seat
 sharing scheme are cooperative. Thus, they try to optimize for a situation
@@ -35,4 +35,19 @@ protection against adverse agents become relevant.
 
 ### Optimizing for cleanliness
 
+We make the assumption that a toilet seat in the `up` position is less likely
+to be smeared than a toilet seat in the `down` position. Also, we refrain from
+including the impact of air-borne bacteria due to leaving the toilet seat lid
+open during flushing, for reasons or protocol simplicity. Research into both of
+these areas is recommended.
+
 ### Optimizing for non-collaborative use
+
+We propose the assumption that a generic toilet seat protocol should be equally
+applicable in cooperative and hostile environments. We define hostile
+environments as toilets in spaces where toilet users feel little or no shared
+responsibility for the cleanliness of the toilet or the relationship with those
+with whom the toilet is shared. In other words, the `conflict cost M` as defined
+by Harter nears zero. We define cooperative environments as toilets in spaces
+where toilet users do feel responsibility for keeping both the toilet clean and
+the relationship intact. In other words, `M` nears one.
