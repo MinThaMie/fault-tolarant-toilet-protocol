@@ -63,7 +63,7 @@ Based upon the assumpations written above this protocol will optimize the experi
 Eventhough it might be an unpopular stand point to have to put the toilet seat back into the upright posistion especially from a female perspective as shown by Choi, we argue that this protocol benefits everyone.
 As shown by UK Bathrooms [4] the arguements around the toilet seat puts a strain on relationships. Hilt et al.[5] show that there are a lot of bacteria in urine which pose serious health hazards so reducing the chanche to catch these bacteria will benefit society. The largest problem with the proposed strategy is that it requires a change in behaviour. Changing behaviour is hard and requires time and effort. The most benefitial part of this protocol is that the toilet seat is always in the same state, upwards. Knowing this state and the required action will reduce the current frustration that arises from the suprise effect that women experience from sitting down on the toilet without a seat.
 
-## Future research 
+## Future research
 Gerba et al. [6] show in their research that there are merrits to closing the lid when flushing. Since this step does not influence the end state of the lid it is not part of the protocol eventhough it might be worth to address this topic when thinking about a toilet in a hostile, but even in a collaborative enviroment.
 
 # References
@@ -77,7 +77,7 @@ Gerba et al. [6] show in their research that there are merrits to closing the li
 
 [1]: https://msu.edu/~choijay/etiquette.pdf
 [2]: http://www.scq.ubc.ca/a-game-theoretic-approach-to-the-toilet-seat-problem/
-[3]: https://www.reddit.com/r/dataisbeautiful/comments/2rzkcu/optimal_toiletas show_seat_strategies_oc/
+[3]: https://www.reddit.com/r/dataisbeautiful/comments/2rzkcu/optimal_toiletas%20show_seat_strategies_oc/
 [4]: https://blog.ukbathrooms.com/biggest-cause-petty-arguments-co-habiting-couples-bathroom-etiquette/
 [5]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3957746/
 [6]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC187159/
