@@ -1,16 +1,18 @@
 # A fault-tolerant toilet seat protocol
 
+
 ## Abstract
 
 In this article we propose a fault-tolerant protocol for toilet seat
 positioning in a hostile environment.
 
+
 ## Assumptions
 
-[Jay Pil Choi (2002)][1]`[1]` in his excellent article on toilet seat etiquette makes
-the assumption that toilet users wish to optimize their toilet behaviour for
-inconvenience cost. [Richard Harter (2005)][2]`[2]` also tries to find a cost optimum
-and proposes three cost minimization candidate criteria:
+[Jay Pil Choi (2002)][1]`[1]` in his excellent article on toilet seat etiquette
+makes the assumption that toilet users wish to optimize their toilet behaviour
+for inconvenience cost. [Richard Harter (2005)][2]`[2]` also tries to find a
+cost optimum and proposes three cost minimization candidate criteria:
 
 > 1. Minimize the joint total cost
 > 2. Equalize the respective total costs
@@ -52,13 +54,46 @@ by Harter nears zero. We define cooperative environments as toilets in spaces
 where toilet users do feel responsibility for keeping both the toilet clean and
 the relationship intact. In other words, `M` nears one.
 
+
 ## Inter-agent comparison
 
 Traditionally the literature considers the difference between male and female
-toilet users. From a cost perspective however, especially looking at incremental
-costs, there is a significant difference between male and female users. From a
-cleanliness perspective however, both types of agents have similar requirements,
-that is: a clean toilet.
+toilet users. This makes sense since from a cost perspective, especially a
+Harter `incremental cost` perspective, there is a significant difference between
+male and female users.
+
+This makes for a very bad starting point in our hostile, non-collaborative case.
+We have two agents with diverging desires and differing costs, depending on the
+chosen strategy. It makes sense that this leads to unresolvable conflict. We
+take this as our starting point for this protocol, accepting that this inherent
+difference in cost and desired outcome effectively makes each environment
+hostile to some degree.
+
+Optimizing for cleanliness changes this dynamic since both parties have a desire
+for a clean toilet, but generally speaking with different tolerances for dirty
+toilets, as we shall establish.
+
+### Benefit analysis
+
+The study of [C. Rose et al. (2015)][7]`[7]` shows an average defecation
+frequency of 1.1 movements per 24 hours (with men having a slightly higher
+frequency than women) and an average urination frequency of six movements per 24
+hours. This, on average, makes for an approximate seven toilet visits per person
+per 24 hours.
+
+Of these seven visits, we expect female users to have an equally high preference
+for a clean toilet on each visit. Of male users we would however expect that
+they would display a high preference for a clean toilet one in seven times, with
+a somewhat lower preference the other six visits.
+
+It intuitively makes sense that each agent will have a stake in a clean toilet
+relative to their respective requirements of said toilet. So we can expect to
+see a higher willingness to advocate for and care for a clean toilet in female
+users than in male users.
+
+In both cases the benefit can be used as an incentive to apply a protocol that
+is inherently self-serving (albeit not `selfish`, as per Choi's analysis).
+
 
 ## Fault tolarant toilet seat protocol
 Based upon the assumpations written above this protocol will optimize the experience of using a toilet in a non-collaborative setting.
@@ -81,7 +116,8 @@ Gerba et al. [6] show in their research that there are merrits to closing the li
 3. [Relevant thread on Reddit][3]
 4. [Biggest Cause of Petty Arguments for Co-Habiting Couples? Bathroom Etiquette][4]
 5. [Urine Is Not Sterile: Use of Enhanced Urine Culture Techniques To Detect Resident Bacterial Flora in the Adult Female Bladder][5]
-6. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC187159/][6]
+6. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC187159/][6]\
+7. [The Characterization of Feces and Urine: A Review of the Literature to Inform Advanced Treatment Technology, C. Rose, A. Parker, B. Jefferson, and E. Cartmell][7]
 
 [1]: https://msu.edu/~choijay/etiquette.pdf
 [2]: http://www.scq.ubc.ca/a-game-theoretic-approach-to-the-toilet-seat-problem/
@@ -89,3 +125,4 @@ Gerba et al. [6] show in their research that there are merrits to closing the li
 [4]: https://blog.ukbathrooms.com/biggest-cause-petty-arguments-co-habiting-couples-bathroom-etiquette/
 [5]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3957746/
 [6]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC187159/
+[7]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4500995/
