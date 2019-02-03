@@ -52,6 +52,14 @@ by Harter nears zero. We define cooperative environments as toilets in spaces
 where toilet users do feel responsibility for keeping both the toilet clean and
 the relationship intact. In other words, `M` nears one.
 
+## Inter-agent comparison
+
+Traditionally the literature considers the difference between male and female
+toilet users. From a cost perspective however, especially looking at incremental
+costs, there is a significant difference between male and female users. From a
+cleanliness perspective however, both types of agents have similar requirements,
+that is: a clean toilet.
+
 ## Fault tolarant toilet seat protocol
 Based upon the assumpations written above this protocol will optimize the experience of using a toilet in a non-collaborative setting.
 
