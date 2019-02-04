@@ -121,28 +121,30 @@ we would propose the following protocol:
 
 1. Upon entering the bathroom we observe any of the three possible states
 2. Given the state, and the user's requirements, the user will either:
-    1. Make no transition; or
-    2. Make a transition into the desired `down` state (1 or 6); or
-    3. Make a transition into the desired `up` state (3 or 5).
+    1. Observe the `up` state and apply no transition; or
+    2. Observe the `up` state and apply transition (1); or
+    3. Observe the `down` state and apply no transition; or
+    4. Observe the `down` state and apply transition (3); or
+    5. Observe the `closed` state and apply either transition (5) or (6);
 3. The user does their business
 4. After finishing step 3 the user will either:
-    1. Make no transition; or
-    2. Make a transition into the `up` state (3 or 5);<br/>
+    1. Observe the `up` state and apply no transition; or
+    2. Observe the `down` state and apply transition (3);<br/>
 such that in any case the end state of the toilet is the `up` state.
 
 This protocol, if properly implemented, maximizes the `up` state of the toilet,
-making visits to the toilet by users who apply `2.i.` less likely to smear the
-toilet seat, regardless of whether they adopt this protocol or not. This makes
-the protocol defensive by nature, and thus (as we consider a dirty toilet to be
-a fault, in our model) the most fault-tolerant solution.
+making visits to the toilet by lazy users who apply `2.i.` less likely to smear
+the toilet seat, regardless of whether they adopt this protocol or not. This
+makes the protocol defensive by nature, and thus (as we consider a dirty toilet
+to be a fault, in our model) the most fault-tolerant solution.
 
 One could argue that as the adoption rate of this protocol reaches the maximum,
-female users will mostly apply `2.ii.` followed by `4.ii.`, whereas male users will
-be able to apply `2.i.` followed by `4.i.` in six out of an average of seven toilet
-visits, and as such infer less cost in the classical sense. Consider, however,
-that this distribution of cost perfecly matches the distribution of benefits as
-outlined in our benefit analysis, making each agent inherently self-serving and
-yet contributing to the end goal of cleanliness.
+female users will mostly apply `2.ii.` followed by `4.ii.`, whereas male users
+will be able to apply `2.i.` followed by `4.i.` in six out of an average of
+seven toilet visits, and as such infer less cost in the classical sense.
+Consider, however, that this distribution of cost perfectly matches the
+distribution of benefits as outlined in our benefit analysis, making each agent
+inherently self-serving and yet contributing to the end goal of cleanliness.
 
 
 ## Social impact of the proposed toilet seat protocol
